@@ -43,12 +43,13 @@ export const voteQuestion = async (req, res) => {
     // const userId = req.userId;
     const { value,userId} = req.body;
 
-    if (!mongoose.Types.ObjectId.isValid(_id)) {
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+        console.log("error 404");
         return res.status(404).send('question unavailable...');
     }
 
     try {
-        const question = await Questions.findById(_id)
+        const question = await Questions.findById(id)
         const upIndex = question.upVote.findIndex((id) => id === String(userId))
         const downIndex = question.downVote.findIndex((id) => id === String(userId))
 
