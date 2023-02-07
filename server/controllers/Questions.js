@@ -38,7 +38,7 @@ export const deleteQuestion = async (req, res) => {
 }
 
 export const voteQuestion = async (req, res) => {
-    const { id: _id } = req.params;
+    const { _id: id } = req.params;
     // const { value } = req.body;
     // const userId = req.userId;
     const { value,userId} = req.body;
