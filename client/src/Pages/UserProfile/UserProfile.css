@@ -4,6 +4,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    max-height: 60vh;
 }
 
 .user-details{
@@ -40,7 +41,7 @@
     font-size: 13px;
 }
 .edit-profile-form {
-    padding: 15px;
+    padding: 10px;
     /* height: 40vh; */
     border: solid 1px #dbd9d9;
     border-radius: 5px;
@@ -63,7 +64,7 @@
 }
 
 .user-submit-btn{
-    padding: 12px 10px;
+    padding: 8px 10px;
     background-color: #0a95ff;
     color: white;
     border: none;
@@ -77,7 +78,7 @@
 }
 
 .user-cancel-btn{
-    padding: 14px 10px;
+    padding: 8px 10px;
     color: #0a95ff;
     background-color: transparent;
     border: none;
