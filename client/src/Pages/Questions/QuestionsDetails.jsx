@@ -78,7 +78,8 @@ const QuestionsDetails = () => {
     const User = useSelector((state) => (state.currentUserReducer))
     const location = useLocation()
     // console.log(location);
-    const url = 'http://localhost:3000'
+    //const url = 'http://localhost:3000'
+    const url = 'https://clonestackoverflow.netlify.app/'
 
     const handlePostAns = (e, answerLength) => {
         e.preventDefault()
