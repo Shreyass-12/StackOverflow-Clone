@@ -1,9 +1,10 @@
 import React from 'react'
+
 import LeftSidebar from '../../components/LeftSidebar/LeftSidebar'
 import RightSidebar from '../../components/RightSidebar/RightSidebar'
 import HomeMainbar from '../../components/HomeMainbar/HomeMainbar'
-
 import '../../App.css'
+import Chat from '../../components/Chat/Chat'
 
 const Questions = () => {
   return (
@@ -11,6 +12,7 @@ const Questions = () => {
       <LeftSidebar />
       <div className="home-container-2">
         <HomeMainbar />
+        <Chat />
         <RightSidebar />
       </div>
     </div>

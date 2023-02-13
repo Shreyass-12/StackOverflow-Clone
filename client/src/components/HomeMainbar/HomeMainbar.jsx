@@ -1,8 +1,10 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useLocation,useNavigate } from 'react-router-dom'
+
 import './HomeMainbar.css'
 import QuestionList from './QuestionList'
+
 
 const HomeMainbar = () => {
   const location = useLocation()
@@ -85,7 +87,7 @@ return (
       {
         location.pathname === '/' ? <h1>Top Questions</h1> : <h1>All Questions</h1>
       }
-      <button onClick={checkAuth} className='ask-btn'>Ask Question</button>
+      <button onClick={checkAuth} className='ask-btn' >Ask Question</button>
     </div>
     <div>
       {
